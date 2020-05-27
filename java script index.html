@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<title>내 취미와 해야할 것들.</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1><a href="index.html">내 취미와 해야할 것들.</a></h1>
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if(this.value ==='night'){
+  target.style.backgroundColor = 'black';
+  target.style.color = 'white';
+  this.value = 'day';
+} else {
+target.style.backgroundColor = 'white';
+target.style.color = 'black';
+this.value = 'night';
+}
+">
+<ol>
+  <li> <a href="3.html">농구선수 이야기</a></li>
+  <li> <a href="4.html">코딩 이야기</a></li>
+  <li> <a href="5.html">농구화 이야기</a></li>
+</ol>
+<h2>내 취미와 해야할 것들.</h2>
+<p>내가 좋아하는 것들과 앞으로 해야할 일들에 대해서 작성한 웹페이지 입니다. 아무것도 할 줄 몰라서 배우기 시작한 코딩과 10년 넘게 취미인 농구, 그리고 제가 좋아하는 농구화에 관해서 작성할 예정입니다.</p>
+
+<p>
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://kodinggongbu-3.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
+</body>
+</html>
