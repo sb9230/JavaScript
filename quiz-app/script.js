@@ -140,7 +140,8 @@ submitBtn.addEventListener('click',() => {
         if(currentQuiz < quizData.length) {
             loadQuiz();
         } else {
-            quiz.innerHTML = `<h2> 당신의 점수 입니다.  ${score}/${quizData.length}</h2>`;
+            quiz.innerHTML = `<h2> 당신의 점수 입니다.  ${score}/${quizData.length}</h2>
+            <button onclick="location.reload();">reload</button>`;
         }
     }
 });
